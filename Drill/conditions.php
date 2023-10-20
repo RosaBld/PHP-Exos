@@ -158,7 +158,36 @@
         $genderSoccer=$_GET['genderSoccer'];
         if ($soccerAge>=21 && $soccerAge<40 && $genderSoccer=='female') 
             echo "Welcome to the team!";
-        if ($soccerAge<21 && $soccerAge>=40 && $genderSoccer!='female')
+        if ($soccerAge<21 || $soccerAge>=40 || $genderSoccer!='female')
             echo "Sorry, you do not meet the criteria to join the team.";
     };
+
+    echo '<br><br>';
+?>
+    <!-- 2.8. "School sucks!" exercice -->
+<html>
+    <form method='get'>
+        <div>
+           <label for='grade'>Grade:</label>
+           <input type='number' name='grade' min='0' max='20'> 
+        </div>
+        <input type='submit' name='submit' value="How's your grade"/>
+    </form>
+</html>
+<?php
+if (isset($_GET['grade'])) {
+    $grade=$_GET['grade'];
+    if ($grade<5)
+        echo "This work is really bad. What a dumb idiot!";
+    else if ($grade>=5 && $grade<=9)
+        echo "This is not sufficiant. More studying is required.";
+    else if ($grade==10)
+        echo "Barely enough!";
+    else if ($grade>=11 && $grade<=14)
+        echo "Not bad!";
+    else if ($grade>=15 && $grade<=18)
+        echo "Bravo, bravissimo!";
+    else
+        echo "Too good to be true: confront the cheater!";
+}
 ?>
