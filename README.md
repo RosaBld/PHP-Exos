@@ -14,7 +14,7 @@ So let's seen what we had to do!
 
 > - go into the folder served by your Web server (on Ubuntu, it often is /var/www/html or /htdocs or /public
 > - Create a folder variable and inside, a file called humans.php containing this piece of code :
-> ```php
+```php
   <html>
     <head><title>Hi!</title></head>
     <body>
@@ -24,7 +24,7 @@ So let's seen what we had to do!
     
     </body>
   </html>
-  ```
+```
 >
 > Create a file `called variable_types.php` and try to do this:
 >
