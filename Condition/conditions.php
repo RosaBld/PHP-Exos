@@ -120,3 +120,45 @@
 
     echo '<br><br>';
 ?>
+    <!-- 2.6. The girl soccer team -->
+<html>
+    <form method='get'>
+        <div>
+            <label for='soccerAge'>What is your age?</label>
+            <br>
+            <input type='number' name='soccerAge'>
+        </div>
+        <div>
+            <label for='genderSoccer'>What's your gender?</label>
+            <br>
+            <input type='radio' id='male' name='genderSoccer' value='male'/>
+            <label for='male'>Male</label>
+            <input type='radio' id='female' name='genderSoccer' value='female'/>
+            <label for='female'>Female</label>
+        </div>
+        <input type='submit' name='submit' value='Send'/>
+    </form>
+</html>
+
+<?php
+    // if (isset($_GET['soccerAge'], $_GET['genderSoccer'])) {
+    //     $soccerAge=$_GET['soccerAge'];
+    //     $genderSoccer=$_GET['genderSoccer'];
+    //     if ($soccerAge>=21 && $soccerAge<40 && $genderSoccer=='female') 
+    //         echo "Welcome to the team!";
+    //     else
+    //         echo "Sorry, you do not meet the criteria to join the team.";
+    // };
+
+    // echo '<br><br>';
+
+    // 2.7. Achieve the same, without the ELSE
+    if (isset($_GET['soccerAge'], $_GET['genderSoccer'])) {
+        $soccerAge=$_GET['soccerAge'];
+        $genderSoccer=$_GET['genderSoccer'];
+        if ($soccerAge>=21 && $soccerAge<40 && $genderSoccer=='female') 
+            echo "Welcome to the team!";
+        if ($soccerAge<21 && $soccerAge>=40 && $genderSoccer!='female')
+            echo "Sorry, you do not meet the criteria to join the team.";
+    };
+?>
