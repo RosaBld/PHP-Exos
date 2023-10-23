@@ -107,7 +107,7 @@ Code given, fixed it!
 6. The girl soccer team!
 
 > You want to create a soccer team for girls between 21 and 40 years old.
-
+>
 > Create a form asking for the age, gender and name of the person. Use the `$age` and `$gender` variables in an `if/else` to display a "welcome to the team !" or "Sorry you don't fit the criteria" message.
 
 7. Achieve the same, without the ELSE!
@@ -119,7 +119,7 @@ Code given, fixed it!
 > Start a new form that would allow a (nasty) teacher to grade a student.
 >
 > It would display a different message according to the number annotated :
-
+>
 > -    note below 4 : "This work is really bad. What a dumb kid! "
 > -    note between 5 and 9 : "This is not sufficient. More studying is required."
 > -    note equals 10 : "barely enough!"
@@ -159,7 +159,7 @@ Code given, fixed it!
 > -    Display its content using the print_r
 > -    Then, create an array listing your favourite films
 > -    Then, using that array, display only the one film you like best using its index
->
+
 2.
 > -    Describe yourself using an associative array: `$me`. Specify your age, your favourite season of the year, wether you like soccer or not (boolean). Try to use the right variable type for each value.
 > -    Let's add your favourite movies to the `$me` array
@@ -169,14 +169,15 @@ Code given, fixed it!
 > -    Then, below that, assign the `$mother` array to a new key in your `$me` array : let's call that key `'mother'`.
 > -    Now, below that, check the content of `$me` using `print_r()`. (wrap it inside a `<pre>` html tag to make it more legible ). It should show a multi-dimensional array, where the `mother` array are values of your mother key.
 > -    Read multiple times your code to make sure you understand what happens.
->
+
 3.
 > A friend introduced you to the joys of Taxidermy : it quickly becomes your new hobby. Try to find the right way to add that new hobby to your array's `'hobbies'` key.
->
+
 4.
 > You decide you need a reset and change your last name to `Durand`. How would you update your array ?
->
+
 5.
+
 > One day, you meet your `$soulmate`. Describe your soulmate as an array, with the same keys as yours.
 >
 > Now, I wonder ... What are the potential hobbies your child could have ? It turns out there was a documentary on TV the other day, in which an expert in Genetics explained 2 possible scenarios that could answer that question :
@@ -203,6 +204,7 @@ echo '</pre>';
 ```
 
 6.
+
 > Let's get more fluent in array manipulation : add, delete and replace elements.
 >
 > For each of these exercises, use `print_r()` or `var_dump()` to check if the result corresponds to the specifications.
