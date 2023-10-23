@@ -181,12 +181,12 @@ Code given, fixed it!
 > One day, you meet your `$soulmate`. Describe your soulmate as an array, with the same keys as yours.
 >
 > Now, I wonder ... What are the potential hobbies your child could have ? It turns out there was a documentary on TV the other day, in which an expert in Genetics explained 2 possible scenarios that could answer that question :
-
+>
 > -    either intersection (only the hobbies common to both arrays)
 > -    or a fusion (all the hobbies of each array together)
-
+>
 > Try to guess the name of the 2 PHP functions that can make these two operations and look it up in the online PHP Manual. (Tip: both start with `array_`). Test their syntax and try to answer the question.
-
+>
 > Here is a headstart:
 
 ```php
