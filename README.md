@@ -208,7 +208,7 @@ echo '</pre>';
 > Let's get more fluent in array manipulation : add, delete and replace elements.
 >
 > For each of these exercises, use `print_r()` or `var_dump()` to check if the result corresponds to the specifications.
-
+>
 > -    Create an array  `web_development` containing a `'frontend'` and a `'backend'` key. Assign an empty array to each key.
 > -    Then, add a line underneath that pushes `'xhtml'` in the right array.
 > -    Then, add a line underneath that pushes `'Ruby` on Rails' in the right array.
