@@ -14,7 +14,7 @@ So let's seen what we had to do!
 
 > - go into the folder served by your Web server (on Ubuntu, it often is /var/www/html or /htdocs or /public
 > - Create a folder variable and inside, a file called humans.php containing this piece of code :
-```php
+> ```php
   <html>
     <head><title>Hi!</title></head>
     <body>
@@ -24,7 +24,7 @@ So let's seen what we had to do!
     
     </body>
   </html>
-```
+  ```
 >
 > Create a file `called variable_types.php` and try to do this:
 >
@@ -145,13 +145,82 @@ Code given, fixed it!
 
 ### Consolidation challenge: Face excuse notes generator
 
+> With the help of a condition, generates the appropriate excuse word based on the answers to the form. The parent will only have to copy and paste the answer to write his or her letter of apology.
+>
+> __Bonus__
+> Provide 5 apologies for each reason and ensure that one of the 5 apologies is randomly selected and included in the letter of apology.
 
+### Array
+
+> 1 :
+> -    Create an array representing your family members
+> -    Display its content using the print_r function
+> -    Then, create an array describing your favourite recipes
+> -    Display its content using the print_r
+> -    Then, create an array listing your favourite films
+> -    Then, using that array, display only the one film you like best using its index
+>
+> 2 :
+> -    Describe yourself using an associative array: `$me`. Specify your age, your favourite season of the year, wether you like soccer or not (boolean). Try to use the right variable type for each value.
+> -    Let's add your favourite movies to the `$me` array
+> -    Add your hobbies using an array to your `$me` array
+> -    Then, after the $me array, create a second array with the same keys as yours, to describe your `mother` : the `$mother` array (make it someone else if you prefer).
+> -    Make sure to also describe her hobbies
+> -    Then, below that, assign the `$mother` array to a new key in your `$me` array : let's call that key `'mother'`.
+> -    Now, below that, check the content of `$me` using `print_r()`. (wrap it inside a `<pre>` html tag to make it more legible ). It should show a multi-dimensional array, where the `mother` array are values of your mother key.
+> -    Read multiple times your code to make sure you understand what happens.
+>
+> 3 :
+> A friend introduced you to the joys of Taxidermy : it quickly becomes your new hobby. Try to find the right way to add that new hobby to your array's `'hobbies'` key.
+>
+> 4 :
+> You decide you need a reset and change your last name to `Durand`. How would you update your array ?
+>
+> 5 :
+> One day, you meet your `$soulmate`. Describe your soulmate as an array, with the same keys as yours.
+>
+> Now, I wonder ... What are the potential hobbies your child could have ? It turns out there was a documentary on TV the other day, in which an expert in Genetics explained 2 possible scenarios that could answer that question :
+
+> -    either intersection (only the hobbies common to both arrays)
+> -    or a fusion (all the hobbies of each array together)
+
+> Try to guess the name of the 2 PHP functions that can make these two operations and look it up in the online PHP Manual. (Tip: both start with `array_`). Test their syntax and try to answer the question.
+
+> Here is a headstart:
+
+```php
+$me = array(...);
+$soulmate = array( ... );
+
+// perform array operation
+$possible_hobbies_via_intersection = array_...;
+$possible_hobbies_via_merge = array_...;
+
+echo '<pre>';
+print_r($possible_hobbies_via_intersection);
+print_r($possible_hobbies_via_merge);
+echo '</pre>';
+```
+
+> 6 :
+> Let's get more fluent in array manipulation : add, delete and replace elements.
+>
+> For each of these exercises, use `print_r()` or `var_dump()` to check if the result corresponds to the specifications.
+
+> -    Create an array  `web_development` containing a `'frontend'` and a `'backend'` key. Assign an empty array to each key.
+> -    Then, add a line underneath that pushes `'xhtml'` in the right array.
+> -    Then, add a line underneath that pushes `'Ruby` on Rails' in the right array.
+> -    Then, add a line underneath that pushes `'CSS'` in the right array.
+> -    Then, add a line underneath that pushes `'Flash'` in the right array.
+> -    Then, add a line underneath that pushes `'JavaScript'` in the right array.
+> -    Then, add a line underneath that replace `'xhtml'` by `'html'`.
+> -    Then, add a line underneath that removes `'Flash'` from the array.
 
 
 ---
 
 #### Languages
 
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
