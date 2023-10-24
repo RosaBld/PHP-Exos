@@ -220,7 +220,50 @@ echo '</pre>';
 
 ### Loops!
 
+1. Foreach
+> Here is an array :
 
+```php
+$pronouns = array ('I', 'You', 'He/She','We', 'You', 'They');
+```
+>
+> Using `foreach`, build a loop that displays each element of the array
+> Then, modify your loop so as to conjugate the verb "to code" in the present tense. Use a `<br>` to go to the next line. The result should be :
+
+
+```php
+I code
+You code
+He/She codes
+We code
+You code
+They code
+```
+
+2. While Loop.
+
+Trying a while loop to practice (but not a big one cause my computer can't take it).
+
+3. For Loop.
+
+Trying a for loop to practice (but not a big one cause my computer can't take it).
+
+Recap:
+
+> - Write a script that prints the numbers from 1 to 120 using `while` 
+> - Write a script that prints the numbers from 1 to 120 using `for` 
+> - Create an array containing the firstname of everyone in your startup. Display each firstname using a loop.
+> - Create an array containing at least 10 countries. Then, generate the html that will render a select box inside an html form (see mockup below). Of course, a loop will be useful...
+
+> - Now, edit your array so that it becomes an associative array: use the country ISO code as array key, and the country name as value. For example :
+```php
+$pays = array('BE'=>'Belgique');` 
+```
+> - Now, adapt your html select box so that the country ISO code becomes the `<option>` element value, and the country name be the visible part of the `<option>`.
+> - Done! Congratz: that's exactly how an html select box should be done !
+
+
+### Fonctions!
 
 
 ---
@@ -229,4 +272,4 @@ echo '</pre>';
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+<!-- ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) -->
