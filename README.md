@@ -297,7 +297,7 @@ $volume = 3 * 3 * 3.14 * 4 * (1/3);
 echo 'The volume of a cone which ray is 3 and height is 4 = ' . $volume . ' cm<sup>3</sup><br />';  
 ```
 
-##AZ-Store!
+## AZ-Store!
 
 Group project that you can check [here](https://github.com/antoinel74/AZ-Store)!
 
